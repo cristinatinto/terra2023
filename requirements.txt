@@ -2,4 +2,3 @@ Streamlit
 altair
 shroomdk
 seaborn
-Footer
