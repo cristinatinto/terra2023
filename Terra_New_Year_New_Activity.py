@@ -106,48 +106,48 @@ with st.expander("Check the analysis"):
         st.altair_chart(alt.Chart(df)
         .mark_bar()
         .encode(x='date:N', y='n_txns:Q',color='period')
-        .properties(title='Daily transactions evolution',width=300))
+        .properties(title='Daily transactions evolution'))
     
     col2.altair_chart(alt.Chart(df)
         .mark_bar()
         .encode(x='period:N', y='n_txns:Q',color='period')
-        .properties(title='Transactions comparison',width=300))
+        .properties(title='Transactions comparison'))
     
     col1,col2=st.columns(2)
     with col1:
         st.altair_chart(alt.Chart(df)
         .mark_bar()
         .encode(x='date:N', y='n_wallets:Q',color='period')
-        .properties(title='Daily active wallets evolution',width=300))
+        .properties(title='Daily active wallets evolution'))
     
     col2.altair_chart(alt.Chart(df)
         .mark_bar()
         .encode(x='period:N', y='n_wallets:Q',color='period')
-        .properties(title='Active wallets comparison',width=300))
+        .properties(title='Active wallets comparison'))
     
     col1,col2=st.columns(2)
     with col1:
         st.altair_chart(alt.Chart(df)
         .mark_bar()
         .encode(x='date:N', y='fee_luna:Q',color='period')
-        .properties(title='Daily fees evolution',width=300))
+        .properties(title='Daily fees evolution',))
     
     col2.altair_chart(alt.Chart(df)
         .mark_bar()
         .encode(x='period:N', y='fee_luna:Q',color='period')
-        .properties(title='Fees comparison',width=300))
+        .properties(title='Fees comparison'))
     
     col1,col2=st.columns(2)
     with col1:
         st.altair_chart(alt.Chart(df)
         .mark_bar()
         .encode(x='date:N', y='n_new_wallets:Q',color='period')
-        .properties(title='Daily new users evolution',width=300))
+        .properties(title='Daily new users evolution'))
     
     col2.altair_chart(alt.Chart(df)
         .mark_bar()
         .encode(x='period:N', y='n_new_wallets:Q',color='period')
-        .properties(title='New users comparison',width=300))
+        .properties(title='New users comparison'))
     
     
 
@@ -389,72 +389,72 @@ with st.expander("Check the analysis"):
         st.altair_chart(alt.Chart(df)
         .mark_bar()
         .encode(x='date:N', y='n_contracts:Q',color='period')
-        .properties(title='Daily new contracts evolution',width=300))
+        .properties(title='Daily new contracts evolution'))
     
     col2.altair_chart(alt.Chart(df)
         .mark_bar()
         .encode(x='period:N', y='n_contracts:Q',color='period')
-        .properties(title='New contracts comparison',width=300))
+        .properties(title='New contracts comparison'))
     
     col1,col2=st.columns(2)
     with col1:
         st.altair_chart(alt.Chart(df2)
         .mark_bar()
         .encode(x='date:N', y='n_contracts:Q',color='period')
-        .properties(title='Daily active contracts evolution',width=300))
+        .properties(title='Daily active contracts evolution'))
     
     col2.altair_chart(alt.Chart(df2)
         .mark_bar()
         .encode(x='period:N', y='n_contracts:Q',color='period')
-        .properties(title='Active contracts comparison',width=300))
+        .properties(title='Active contracts comparison'))
     
     col1,col2=st.columns(2)
     with col1:
         st.altair_chart(alt.Chart(df3)
         .mark_bar()
         .encode(x='date:N', y='n_txns:Q',color='period')
-        .properties(title='Daily swaps evolution',width=300))
+        .properties(title='Daily swaps evolution'))
     
     col2.altair_chart(alt.Chart(df3)
         .mark_bar()
         .encode(x='period:N', y='n_txns:Q',color='period')
-        .properties(title='Swaps comparison',width=300))
+        .properties(title='Swaps comparison'))
     
     col1,col2=st.columns(2)
     with col1:
         st.altair_chart(alt.Chart(df3)
         .mark_bar()
         .encode(x='date:N', y='n_wallets:Q',color='period')
-        .properties(title='Daily active swappers evolution',width=300))
+        .properties(title='Daily active swappers evolution'))
     
     col2.altair_chart(alt.Chart(df3)
         .mark_bar()
         .encode(x='period:N', y='n_wallets:Q',color='period')
-        .properties(title='Active swappers comparison',width=300))
+        .properties(title='Active swappers comparison'))
     
     col1,col2=st.columns(2)
     with col1:
         st.altair_chart(alt.Chart(df3)
         .mark_bar()
         .encode(x='date:N', y='fee_luna:Q',color='period')
-        .properties(title='Daily swap fees evolution',width=300))
+        .properties(title='Daily swap fees evolution'))
     
     col2.altair_chart(alt.Chart(df3)
         .mark_bar()
         .encode(x='period:N', y='fee_luna:Q',color='period')
-        .properties(title='Swap fees comparison',width=300))
+        .properties(title='Swap fees comparison'))
     
     col1,col2=st.columns(2)
     with col1:
         st.altair_chart(alt.Chart(df3)
         .mark_bar()
         .encode(x='date:N', y='n_new_wallets:Q',color='period')
-        .properties(title='Daily new swappers evolution',width=300))
+        .properties(title='Daily new swappers evolution'))
     
     col2.altair_chart(alt.Chart(df3)
         .mark_bar()
         .encode(x='period:N', y='n_new_wallets:Q',color='period')
-        .properties(title='New swappers comparison',width=300))
+        .properties(title='New swappers comparison'))
     
 
 
@@ -545,72 +545,72 @@ with st.expander("Check the analysis"):
         st.altair_chart(alt.Chart(df)
         .mark_bar()
         .encode(x='date:N', y='n_txns:Q',color='period')
-        .properties(title='Daily staking actions evolution',width=300))
+        .properties(title='Daily staking actions evolution'))
     
     col2.altair_chart(alt.Chart(df)
         .mark_bar()
         .encode(x='period:N', y='n_txns:Q',color='period')
-        .properties(title='Staking actions comparison',width=300))
+        .properties(title='Staking actions comparison'))
     
     col1,col2=st.columns(2)
     with col1:
         st.altair_chart(alt.Chart(df)
         .mark_bar()
         .encode(x='date:N', y='n_wallets:Q',color='period')
-        .properties(title='Daily active stakers evolution',width=300))
+        .properties(title='Daily active stakers evolution'))
     
     col2.altair_chart(alt.Chart(df)
         .mark_bar()
         .encode(x='period:N', y='n_wallets:Q',color='period')
-        .properties(title='Active stakers comparison',width=300))
+        .properties(title='Active stakers comparison'))
     
     col1,col2=st.columns(2)
     with col1:
         st.altair_chart(alt.Chart(df)
         .mark_bar()
         .encode(x='date:N', y='n_validators:Q',color='period')
-        .properties(title='Daily validators evolution',width=300))
+        .properties(title='Daily validators evolution'))
     
     col2.altair_chart(alt.Chart(df)
         .mark_bar()
         .encode(x='period:N', y='n_validators:Q',color='period')
-        .properties(title='Active validators comparison',width=300))
+        .properties(title='Active validators comparison'))
     
     col1,col2=st.columns(2)
     with col1:
         st.altair_chart(alt.Chart(df)
         .mark_bar()
         .encode(x='date:N', y='fee_luna:Q',color='period')
-        .properties(title='Daily staking fees evolution',width=300))
+        .properties(title='Daily staking fees evolution'))
     
     col2.altair_chart(alt.Chart(df)
         .mark_bar()
         .encode(x='period:N', y='fee_luna:Q',color='period')
-        .properties(title='Staking fees comparison',width=300))
+        .properties(title='Staking fees comparison'))
     
     col1,col2=st.columns(2)
     with col1:
         st.altair_chart(alt.Chart(df)
         .mark_bar()
         .encode(x='date:N', y='n_new_wallets:Q',color='period')
-        .properties(title='Daily new stakers evolution',width=300))
+        .properties(title='Daily new stakers evolution'))
     
     col2.altair_chart(alt.Chart(df)
         .mark_bar()
         .encode(x='period:N', y='n_new_wallets:Q',color='period')
-        .properties(title='New stakers comparison',width=300))
+        .properties(title='New stakers comparison'))
     
     col1,col2=st.columns(2)
     with col1:
         st.altair_chart(alt.Chart(df)
         .mark_bar()
         .encode(x='date:N', y='n_new_validators:Q',color='period')
-        .properties(title='Daily new validators evolution',width=300))
+        .properties(title='Daily new validators evolution'))
     
     col2.altair_chart(alt.Chart(df)
         .mark_bar()
         .encode(x='period:N', y='n_new_validators:Q',color='period')
-        .properties(title='New validators comparison',width=300))
+        .properties(title='New validators comparison'))
     
 
 
