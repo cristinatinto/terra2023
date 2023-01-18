@@ -15,6 +15,8 @@ import matplotlib.ticker as ticker
 import numpy as np
 import altair as alt
 sdk = ShroomDK("679043b4-298f-4b7f-9394-54d64db46007")
+st.set_page_config(page_title="Terra in 2023", layout="wide",initial_sidebar_state="collapsed")
+
 
 
 # In[2]:
